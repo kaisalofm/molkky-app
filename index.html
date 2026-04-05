@@ -1,17 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <title>Mölkky pisteet</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-
-    </style>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <h1>Mölkky</h1>
+    <div class="container">
+        <div class="header">
+            <h1>Mölkky</h1>
+        </div>
+        <div class="players">
+            <h2>Pelaajat</h2>
+
+            <label for="playerCount">Pelaajien määrä:</label>
+            <select name="playerCount" id="playerCount">
+                <option value="16">16</option>
+                <option value="32">32</option>
+                <option value="64">64</option>
+            </select>
+
+            <br />
+
+            <div id="playerInputs"></div>
+
+            <br />
+            
+<!--
+            <form onsubmit="addPlayer(event)" id="addPlayerForm">
+                <input id="playerName" placeholder="Nimi" />
+                <button type="submit">+</button>
+            </form>
+            <ol id="players"></ol>-->
+            <button>Aloita peli</button>
+        </div>
+        <div class="content">
+            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Ridiculus sit nisl laoreet facilisis
+                aliquet. Potenti dignissim litora eget montes rhoncus sapien neque urna. Cursus libero sapien integer
+                magnis
+                ligula lobortis quam ut.</p>
+        </div>
+        <div class="footer">
+            <button onclick="resetGame()">Lopeta peli</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 
 </html>

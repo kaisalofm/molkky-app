@@ -1,0 +1,48 @@
+body {
+    font-family: 'Roboto';
+    height: 100%;
+    margin: 0;
+}
+
+h1 {
+    font-size: 22px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "players content"
+        "footer footer";
+    height: 100vh;
+    background-color: beige;
+    grid-template-rows: 50px auto 50px;
+
+}
+
+.container div.header {
+    grid-area: header;
+    background-color: lightgray;
+
+}
+
+.container div.players {
+    grid-area: players;
+    background-color: lightcoral;
+}
+
+.container div.content {
+    grid-area: content;
+    background-color: cadetblue;
+}
+
+.container div.footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: beige;
+    align-content: center;
+}
